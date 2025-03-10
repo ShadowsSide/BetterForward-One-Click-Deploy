@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: BetterForward
+    env: docker
+    repo: https://github.com/ShadowsSide/BetterForward-One-Click-Deploy
+    plan: free
+    envVars:
+      - key: TOKEN
+        sync: false
+      - key: GROUP_ID
+        sync: false
+      - key: LANGUAGE
+        value: zh_CN  # 默认值
+
+
